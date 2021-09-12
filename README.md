@@ -54,5 +54,5 @@ npm run test
 
 ## Questions
 
-Questions about this repository, please contact me at [snp1284kasey@aol.com](mailto:snp1284kasey@aol.com). View more of my work in GitHub at [ShannonPosey](https://github.com/ShannonPosey)
+Questions about this repository, please contact me at [snp1284kasey@aol.com](mailto:snp1284kasey@aol.com). <br/> View more of my work in GitHub at [ShannonPosey](https://github.com/ShannonPosey)
 

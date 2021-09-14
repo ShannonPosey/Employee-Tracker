@@ -3,6 +3,7 @@ const db = require("./db/connection");
 const {viewRoles, addRole} = require("./lib/roles");
 const { viewDepart, addDepart} = require("./lib/department");
 const {viewEmployees, addEmployee} = require("./lib/employees");
+const {viewManager, addManager} = require("./lib/manager");
 
 const promptUser = () => {
     inquirer

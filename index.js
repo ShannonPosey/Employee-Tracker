@@ -1,6 +1,8 @@
 const inquirer = require("inquirer");
 const db = require("./db/connection");
 const {viewRoles, addRole} = require("./lib/roles");
+const { viewDepart, addDepart} = require("./lib/department");
+const {viewEmployees, addEmployee} = require("./lib/employees");
 
 const promptUser = () => {
     inquirer
@@ -14,28 +16,28 @@ const promptUser = () => {
     ])
     .then((data) => {
         switch (data["selection"]) {
-            case "":
+            case "View all Employees":
+                viewEmployees();
+                break;
+            case "Add Employee":
+                addEmployee();
+                break;
+            case "View all Department":
+                viewDepart();
+                break;
+            case "Add Department":
+                addDepart();
+                break;
+            case "View all Roles":
+                viewRoles();
+                break;
+            case "Add roles":
+                addRole();
+                break;
+            case "View all Managers":
                 // function();
                 break;
-            case "":
-                // function();
-                break;
-            case "":
-                // function();
-                break;
-            case "":
-                // function();
-                break;
-            case "":
-                // function();
-                break;
-            case "":
-                // function();
-                break;
-            case "":
-                // function();
-                break;
-            case "":
+            case "Add Managers":
                 // function();
                 break;
             default

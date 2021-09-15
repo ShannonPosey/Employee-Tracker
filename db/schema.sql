@@ -1,7 +1,8 @@
-DROP TABLE IF EXISTS employees;
 DROP TABLE IF EXISTS manager;
 DROP TABLE IF EXISTS department;
 DROP TABLE IF EXISTS roles;
+DROP TABLE IF EXISTS employees;
+
 
 CREATE TABLE manager (
     id INTEGER AUTO_INCREMENT PRIMARY KEY,
@@ -29,5 +30,5 @@ CREATE TABLE employees (
     role_id INTEGER,
     manager_id INTEGER,
     CONSTRAINT fk_role FOREIGN KEY (role_id) REFERENCES roles(id),
-    CONSTRAINT fk_manager FOREIGN KEY (manager_id) REFERENCES roles(id)
+    CONSTRAINT fk_manager FOREIGN KEY (manager_id) REFERENCES roles(id) ON DELETE SET NULL
 );
